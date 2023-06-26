@@ -81,7 +81,7 @@
 						</div>
 						<!-- /.card-header -->
 						<!-- form start -->
-						<form th:action="@{/cusm}" th:object="${customer}" method="POST">
+						<form th:action="@{/cusm}" id="basic-form" th:object="${customer}" method="POST">
 							<div th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
 								There are errors
 							</div>
@@ -98,100 +98,118 @@
 										<div class="form-group">
 											<label for="exampleInputEmail1">Short Name</label>
 											<input type="text" class="form-control" id="shortName"
-												th:field="*{shortName}">
+												th:field="*{shortName}" placeholder="Short Name">
 											<div th:if="${#fields.hasErrors('shortName')}" th:errors="*{shortName}">
 												Short Nmae Error</div>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Full Name</label>
-											<input type="text" class="form-control" id="fullName" th:field="*{fullName}">
+											<input type="text" class="form-control" id="fullName" th:field="*{fullName}"
+												placeholder="Full Name">
 											<div th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}">
-											Full Nmae Error</div>
+												Full Nmae Error</div>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 1</label>
-											<input type="text" class="form-control" id="address1" th:field="*{address1}">
+											<input type="text" class="form-control" id="address1" th:field="*{address1}"
+												placeholder="Address ">
 											<div th:if="${#fields.hasErrors('address1')}" th:errors="*{address1}">
-											Address 1 Error</div>
+												Address 1 Error</div>
 										</div>
-								</div>
+									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="card-body">
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 2</label>
-											<input type="text" class="form-control" id="address2" th:field="*{address2}">
+											<input type="text" class="form-control" id="address2" th:field="*{address2}"
+												placeholder="Address 2">
 											<div th:if="${#fields.hasErrors('address2')}" th:errors="*{address2}">
-											Address 2 Error</div>
+												Address 2 Error</div>
 										</div>
 
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 3</label>
-											<input type="text" class="form-control" id="address3" th:field="*{address3}">
+											<input type="text" class="form-control" id="address3" th:field="*{address3}"
+												placeholder="Address 3">
 											<div th:if="${#fields.hasErrors('address3')}" th:errors="*{address3}">
-											Address 3 Error</div>
+												Address 3 Error</div>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">City</label>
-											<input type="text" class="form-control" id="city"
-												th:field="*{city}">
+											<input type="text" class="form-control" id="city" th:field="*{city}"
+												placeholder="City">
 											<div th:if="${#fields.hasErrors('city')}" th:errors="*{city}">
 												City Error</div>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Postal Code</label>
-											<input type="text" class="form-control" id="postalCode" th:field="*{postalCode}">
+											<input type="text" class="form-control" id="postalCode"
+												th:field="*{postalCode}" placeholder="Postal Code">
 											<div th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}">
-											Postal Code Error</div>
+												Postal Code Error</div>
 										</div>
-										
-								
 
 
+
+
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-4"></div>
+									<div class="col-lg-4">
+									</div>
+									<div class="col-lg-4">
+										<div style=" padding-bottom:10px; text-align: left;">
+											<button type="submit" class="btn btn-primary">Submit</button>
+										</div>
+									</div>
+
+								</div>
 							</div>
-					</div>
+						</form>
 
-					<div class="row">
-						<div class="col-lg-4"></div>
-						<div class="col-lg-4">
-						</div>
-						<div class="col-lg-4">
-							<div style=" padding-bottom:10px; text-align: left;">
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</div>
-						</div>
 
 					</div>
-				</div>
-				</form>
+					<!--/.col (left) -->
 
 
+					<!-- /.row -->
+					<!-- Main row -->
+
+					<!-- /.row (main row) -->
+				</div><!-- /.container-fluid -->
+			</section>
+			<!-- /.content -->
 		</div>
-		<!--/.col (left) -->
+		<!-- /.content-wrapper -->
+		<div th:replace="common/footer :: footer"></div>
 
-
-		<!-- /.row -->
-		<!-- Main row -->
-
-		<!-- /.row (main row) -->
-	</div><!-- /.container-fluid -->
-	</section>
-	<!-- /.content -->
-	</div>
-	<!-- /.content-wrapper -->
-	<div th:replace="common/footer :: footer"></div>
-
-	<!-- Control Sidebar -->
-	<aside class="control-sidebar control-sidebar-dark">
-		<!-- Control sidebar content goes here -->
-	</aside>
-	<!-- /.control-sidebar -->
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark">
+			<!-- Control sidebar content goes here -->
+		</aside>
+		<!-- /.control-sidebar -->
 	</div>
 	<!-- ./wrapper -->
 
 	<!-- jQuery -->
 
+	<script>
+		$(document).ready(function () {
+			$("#basic-form").validate({
+				rules: {
+					postalCode: {
+						required: true,
+						minlength: 1
+					}
+					
+				}
+			});
+		});
 
+	</script>
 
 	<script th:src="@{../../js/jquery-3.2.1.min.js}"></scriptth>
 	<!-- <div th:replace="common/footer_script :: footer_script"></div>-->

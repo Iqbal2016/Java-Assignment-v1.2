@@ -95,20 +95,20 @@
 										<input type="hidden" th:field="*{fullName}">
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 1</label>
-											<input type="text" class="form-control" id="address1" th:field="*{address1}">
+											<input type="text" class="form-control" id="address1" th:field="*{address1}" placeholder="Address 1">
 											<div th:if="${#fields.hasErrors('address1')}" th:errors="*{address1}">
 											Address 1 Error</div>
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 2</label>
-											<input type="text" class="form-control" id="address2" th:field="*{address2}">
+											<input type="text" class="form-control" id="address2" th:field="*{address2}" placeholder="Address 2">
 											<div th:if="${#fields.hasErrors('address2')}" th:errors="*{address2}">
 											Address 2 Error</div>
 										</div>
 
 										<div class="form-group">
 											<label for="exampleInputEmail1">Address 3</label>
-											<input type="text" class="form-control" id="address3" th:field="*{address3}">
+											<input type="text" class="form-control" id="address3" th:field="*{address3}" placeholder="Address 2">
 											<div th:if="${#fields.hasErrors('address3')}" th:errors="*{address3}">
 											Address 3 Error</div>
 										</div>

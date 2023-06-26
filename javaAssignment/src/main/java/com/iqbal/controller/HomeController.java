@@ -79,6 +79,8 @@ public class HomeController {
 		logger.info(".......save customer...."+customer.getPostalCode());
 
 		if (bindingResult.hasErrors()) {
+			logger.info(".......save customer error..1..");
+
 			model.addAttribute("customer", customer);
 			redirectAttributes.addFlashAttribute("message", "Registration Failed");
 			redirectAttributes.addFlashAttribute("alertClass", "alert-danger");
@@ -86,21 +88,20 @@ public class HomeController {
 			return new ModelAndView("customer/cusm.html");
 		}
 		if (post == "") {
+			logger.info(".......save customer error..2..");
+			model.addAttribute("customer", customer);
 			redirectAttributes.addFlashAttribute("message", "Registration Failed");
 			redirectAttributes.addFlashAttribute("alertClass", "alert-danger");
-			model.addAttribute("Customer", new Customer());
-			return new ModelAndView("customer/cusm.html");
+			//model.addAttribute("Customer", new Customer());
+			return new ModelAndView("customer/cusm");
 		}
 		else {
-			// logger.info(".............user..."+creditRiskMaster+"...."+creditRiskMaster.getFunded());
+			 logger.info(".............save customer...");
 			customerService.saveCustomer(customer);
-			//modelAndView.addObject("successMessage", "User has been registered successfully");
-			// modelAndView.addObject("user", new User());
-			// modelAndView.setViewName("/crmmaster_list");
 			redirectAttributes.addFlashAttribute("message", "Customer create successfully");
 			
 		}
-		return new ModelAndView("customer/show");
+		return new ModelAndView("customer/cusm");
 	}
 	
 	@GetMapping(value = "/cusm/list")
