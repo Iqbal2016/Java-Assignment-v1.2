@@ -1,9 +1,8 @@
 ----------------CREATE SCHEMA------------------
-CREATE SCHEMA AssignmentDB;
+CREATE SCHEMA JavaAssignmentDB;
 
-Select * FROM customer_tbl;
 
-TRUNCATE customer_tbl;
+----------------CREATE Table------------------
 
 CREATE TABLE customer_tbl (
     id bigint,
@@ -17,3 +16,7 @@ CREATE TABLE customer_tbl (
     postal_code varchar(10) NOT NULL,
     PRIMARY KEY (id)
 );
+
+--Select * FROM customer_tbl;
+
+--TRUNCATE customer_tbl;
