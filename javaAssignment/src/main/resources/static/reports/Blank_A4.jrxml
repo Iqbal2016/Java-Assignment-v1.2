@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="44b1e9e1-428b-4ad4-9e23-7477148adac2">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="T24RPTTEST"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM fbnk_customer]]>
+	</queryString>
+	<field name="RECID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RECID"/>
+		<property name="com.jaspersoft.studio.field.label" value="RECID"/>
+	</field>
+	<field name="SHORT_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHORT_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHORT_NAME"/>
+	</field>
+	<field name="NAME_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NAME_1"/>
+		<property name="com.jaspersoft.studio.field.label" value="NAME_1"/>
+	</field>
+	<field name="NAME_2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NAME_2"/>
+		<property name="com.jaspersoft.studio.field.label" value="NAME_2"/>
+	</field>
+	<field name="ADDRESS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ADDRESS"/>
+		<property name="com.jaspersoft.studio.field.label" value="ADDRESS"/>
+	</field>
+	<field name="FATHER_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FATHER_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="FATHER_NAME"/>
+	</field>
+	<field name="MOTHER_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MOTHER_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="MOTHER_NAME"/>
+	</field>
+	<field name="PHONE_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PHONE_1"/>
+		<property name="com.jaspersoft.studio.field.label" value="PHONE_1"/>
+	</field>
+	<field name="SMS_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SMS_1"/>
+		<property name="com.jaspersoft.studio.field.label" value="SMS_1"/>
+	</field>
+	<field name="EMAIL_1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="EMAIL_1"/>
+		<property name="com.jaspersoft.studio.field.label" value="EMAIL_1"/>
+	</field>
+	<field name="TITLE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TITLE"/>
+		<property name="com.jaspersoft.studio.field.label" value="TITLE"/>
+	</field>
+	<field name="GIVEN_NAMES" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GIVEN_NAMES"/>
+		<property name="com.jaspersoft.studio.field.label" value="GIVEN_NAMES"/>
+	</field>
+	<field name="FAMILY_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FAMILY_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="FAMILY_NAME"/>
+	</field>
+	<field name="GENDER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GENDER"/>
+		<property name="com.jaspersoft.studio.field.label" value="GENDER"/>
+	</field>
+	<field name="DATE_OF_BIRTH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DATE_OF_BIRTH"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATE_OF_BIRTH"/>
+	</field>
+	<field name="BUSINESS_ADDRESS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BUSINESS_ADDRESS"/>
+		<property name="com.jaspersoft.studio.field.label" value="BUSINESS_ADDRESS"/>
+	</field>
+	<field name="LEGAL_ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LEGAL_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="LEGAL_ID"/>
+	</field>
+	<field name="LEGAL_DOC_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LEGAL_DOC_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="LEGAL_DOC_NAME"/>
+	</field>
+	<field name="COMPANY_BOOK" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="COMPANY_BOOK"/>
+		<property name="com.jaspersoft.studio.field.label" value="COMPANY_BOOK"/>
+	</field>
+	<field name="PARENT_CIF" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PARENT_CIF"/>
+		<property name="com.jaspersoft.studio.field.label" value="PARENT_CIF"/>
+	</field>
+	<field name="CUSGRPID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CUSGRPID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CUSGRPID"/>
+	</field>
+	<field name="CUSTOMER_THANA_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CUSTOMER_THANA_CODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CUSTOMER_THANA_CODE"/>
+	</field>
+	<field name="OWNER_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OWNER_CODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="OWNER_CODE"/>
+	</field>
+	<field name="BIRTH_INCORP_DATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BIRTH_INCORP_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="BIRTH_INCORP_DATE"/>
+	</field>
+	<field name="NATIONAL_ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NATIONAL_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="NATIONAL_ID"/>
+	</field>
+	<field name="TIN" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TIN"/>
+		<property name="com.jaspersoft.studio.field.label" value="TIN"/>
+	</field>
+	<field name="CERT_COPY_OF_INCORP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CERT_COPY_OF_INCORP"/>
+		<property name="com.jaspersoft.studio.field.label" value="CERT_COPY_OF_INCORP"/>
+	</field>
+	<field name="TRADE_LICENSE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TRADE_LICENSE"/>
+		<property name="com.jaspersoft.studio.field.label" value="TRADE_LICENSE"/>
+	</field>
+	<field name="BIRTH_CERTIFICATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BIRTH_CERTIFICATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="BIRTH_CERTIFICATE"/>
+	</field>
+	<field name="PASSPORT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PASSPORT"/>
+		<property name="com.jaspersoft.studio.field.label" value="PASSPORT"/>
+	</field>
+	<field name="BD_CUST_TYPE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BD_CUST_TYPE"/>
+		<property name="com.jaspersoft.studio.field.label" value="BD_CUST_TYPE"/>
+	</field>
+	<field name="INCORP_LEGAL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="INCORP_LEGAL"/>
+		<property name="com.jaspersoft.studio.field.label" value="INCORP_LEGAL"/>
+	</field>
+	<field name="INCORP_NUMBER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="INCORP_NUMBER"/>
+		<property name="com.jaspersoft.studio.field.label" value="INCORP_NUMBER"/>
+	</field>
+	<field name="INCORP_DATE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="INCORP_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="INCORP_DATE"/>
+	</field>
+	<field name="CREATE_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="CREATE_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CREATE_DATE"/>
+	</field>
+	<field name="TRADE_LICENSE_ISSUE_AUTH" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TRADE_LICENSE_ISSUE_AUTH"/>
+		<property name="com.jaspersoft.studio.field.label" value="TRADE_LICENSE_ISSUE_AUTH"/>
+	</field>
+	<field name="RELATION_CUSTOMER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RELATION_CUSTOMER"/>
+		<property name="com.jaspersoft.studio.field.label" value="RELATION_CUSTOMER"/>
+	</field>
+	<field name="SPOUSE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SPOUSE"/>
+		<property name="com.jaspersoft.studio.field.label" value="SPOUSE"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="0" width="100" height="20" uuid="fcd8c483-bb40-490c-b998-f487f92ff46f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d234b4eb-894a-472c-9c3f-e7c59c617c3a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SHORT_NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="0" width="100" height="20" uuid="ee638558-9635-4c9e-ada7-0d2b2a121f6a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de3b3fa0-21ec-47a4-8898-ce15dc4a6778"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAME_1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="100" height="20" uuid="2081dafe-d819-4078-a28c-c1618dd20cad">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1d4d1d0e-60e2-4b3e-ae13-46edd9c27ae6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMS_1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="302" y="0" width="100" height="20" uuid="1b59aaa8-64b7-40b9-862f-b21373ee2cdd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ea6e864-777c-4cff-aa85-5d6222b7aa86"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NATIONAL_ID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="eaaa33b7-c935-4a7c-b7e2-8892674bfedb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d234b4eb-894a-472c-9c3f-e7c59c617c3a"/>
+				</reportElement>
+				<box padding="1"/>
+				<textFieldExpression><![CDATA[$F{SHORT_NAME}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="918d8c37-be61-4062-84fd-bfb3876367d2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de3b3fa0-21ec-47a4-8898-ce15dc4a6778"/>
+				</reportElement>
+				<box padding="1"/>
+				<textFieldExpression><![CDATA[$F{NAME_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="30" uuid="084ea67d-4d78-4677-8a34-7440e6d4bd71">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1d4d1d0e-60e2-4b3e-ae13-46edd9c27ae6"/>
+				</reportElement>
+				<box padding="1"/>
+				<textFieldExpression><![CDATA[$F{SMS_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="14d6c1c4-cf99-4ef1-b86e-2de71a346b28">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ea6e864-777c-4cff-aa85-5d6222b7aa86"/>
+				</reportElement>
+				<box padding="1"/>
+				<textFieldExpression><![CDATA[$F{NATIONAL_ID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

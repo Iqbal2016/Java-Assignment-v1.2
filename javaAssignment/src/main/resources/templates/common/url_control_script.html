@@ -1,0 +1,33 @@
+<div th:fragment="data_loader_script">
+	<script>
+		function loadUserData(type, id) {
+		    var url = '/user/detail/'+type+'/'+id;
+		    console.log("url: "+url);
+		    $("#resultsBlock").load(url);
+		}
+		
+		$(".alert-session").delay(3000).slideUp(200, function() {
+		    $(this).alert('close');
+		    var url = '/clear-message';
+		    $.get( url, function( data ) {
+		    	console.log("session message has been removed");
+	    	});
+		    
+		});
+		
+		function updateBrowserState(newUrl) {
+			//window.history.replaceState({}, document.title, newUrl);
+			window.history.pushState({}, document.title, newUrl);
+		}
+		
+		function showAlertMessage(title, message) {
+			bootbox.alert({ 
+				  size: "small",
+				  title: title,
+				  message: message, 
+				  callback: function(){ /* your callback code */ }
+				});
+		}
+		
+	</script>
+</div>

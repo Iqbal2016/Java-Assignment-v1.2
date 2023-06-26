@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CRM_REPORT" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0db857cb-4545-4612-8b76-c93f098a5213">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[IkNSRURJVF9SSVNLX01BU1RFUiIgLDE1LDE1LDE5Y2UzODQzLTIzMDItNDhiMS1hMjQxLTY2NDhi
+NDlhNWZjYjs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="553"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="433"/>
+	<parameter name="ACCOUNT_NO" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM "CREDIT_RISK_MASTER"
+WHERE 
+	 "CREDIT_RISK_MASTER"."ACCOUNT_NO" = $P{ACCOUNT_NO}]]>
+	</queryString>
+	<field name="ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+	</field>
+	<field name="ACCOUNT_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ACCOUNT_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="ACCOUNT_NAME"/>
+	</field>
+	<field name="ACCOUNT_NO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ACCOUNT_NO"/>
+		<property name="com.jaspersoft.studio.field.label" value="ACCOUNT_NO"/>
+	</field>
+	<field name="ACCOUNT_TYPE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ACCOUNT_TYPE"/>
+		<property name="com.jaspersoft.studio.field.label" value="ACCOUNT_TYPE"/>
+	</field>
+	<field name="BRANCH_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="BRANCH_CODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="BRANCH_CODE"/>
+	</field>
+	<field name="CATEGORY_CODE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CATEGORY_CODE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CATEGORY_CODE"/>
+	</field>
+	<field name="DATE_OF_PROPOSAL_RECEVED" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DATE_OF_PROPOSAL_RECEVED"/>
+		<property name="com.jaspersoft.studio.field.label" value="DATE_OF_PROPOSAL_RECEVED"/>
+	</field>
+	<field name="DIVISION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DIVISION"/>
+		<property name="com.jaspersoft.studio.field.label" value="DIVISION"/>
+	</field>
+	<field name="FUNDED" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="FUNDED"/>
+		<property name="com.jaspersoft.studio.field.label" value="FUNDED"/>
+	</field>
+	<field name="INPUTER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="INPUTER"/>
+		<property name="com.jaspersoft.studio.field.label" value="INPUTER"/>
+	</field>
+	<field name="NATURE_OF_FACILITY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NATURE_OF_FACILITY"/>
+		<property name="com.jaspersoft.studio.field.label" value="NATURE_OF_FACILITY"/>
+	</field>
+	<field name="NON_FUNDED" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="NON_FUNDED"/>
+		<property name="com.jaspersoft.studio.field.label" value="NON_FUNDED"/>
+	</field>
+	<field name="TYPE_OF_APPROVAL_SOUGHT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TYPE_OF_APPROVAL_SOUGHT"/>
+		<property name="com.jaspersoft.studio.field.label" value="TYPE_OF_APPROVAL_SOUGHT"/>
+	</field>
+	<field name="UPDATE_DATE" class="oracle.sql.TIMESTAMP">
+		<property name="com.jaspersoft.studio.field.name" value="UPDATE_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="UPDATE_DATE"/>
+	</field>
+	<field name="UPDATE_STATUS" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="UPDATE_STATUS"/>
+		<property name="com.jaspersoft.studio.field.label" value="UPDATE_STATUS"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="100" height="30" uuid="49b4c2a0-e3a9-4200-be54-3f67bf45e425">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="191cebb0-10fd-4ffb-989f-882681506833"/>
+				</reportElement>
+				<text><![CDATA[ACCOUNT_NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="1" width="100" height="30" uuid="ba9fdd7f-37d7-45bc-a213-84708ea646f2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3e263f5-351f-41f8-8ac8-f00149e294f2"/>
+				</reportElement>
+				<text><![CDATA[BRANCH_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="1" width="100" height="30" uuid="f655fe8a-7774-4fd1-9abd-4fffbf462b95">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="329ecf90-121a-4c9d-884d-aadfa5c8e32b"/>
+				</reportElement>
+				<text><![CDATA[CATEGORY_CODE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="1" width="100" height="30" uuid="ba8f6444-047e-4144-abc7-7bc882f986f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b777e2e-ffde-4574-966f-18122c816b66"/>
+				</reportElement>
+				<text><![CDATA[DIVISION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="1" width="100" height="30" uuid="220d961f-38fe-46bc-8ca3-9987071be50b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1240e5cf-aa11-4fe9-8c05-b09cab6b40e4"/>
+				</reportElement>
+				<text><![CDATA[NON_FUNDED]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="9e7866ea-202a-4397-a337-bc28f8dac28b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="191cebb0-10fd-4ffb-989f-882681506833"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{ACCOUNT_NO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="32ba227b-2540-475e-a7eb-cd15fdc1071a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3e263f5-351f-41f8-8ac8-f00149e294f2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{BRANCH_CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="30" uuid="666117ed-c8f9-4ad4-9814-9628873254a7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="329ecf90-121a-4c9d-884d-aadfa5c8e32b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{CATEGORY_CODE}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="a07c9bf1-56a1-484f-8dcb-3c3863f66736">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b777e2e-ffde-4574-966f-18122c816b66"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DIVISION}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="30" uuid="694db583-a409-4993-bbf5-27e72c1ee368">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1240e5cf-aa11-4fe9-8c05-b09cab6b40e4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NON_FUNDED}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
